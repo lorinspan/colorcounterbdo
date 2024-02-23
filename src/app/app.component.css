@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+#feedback {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 15px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#white { background-color: white; }
+#blue { background-color: blue; color: white; }
+#red { background-color: red; color: white; }
+#yellow { background-color: yellow; }
+
+#end-btn {
+  display: block;
+  margin: 0 auto; /* Centers the button horizontally */
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#feedback span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
