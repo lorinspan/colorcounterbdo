@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -36,7 +37,8 @@ export class AppComponent {
     }
   }
 
-  calculateWinner(): void {
+  getWinner(): string {
+
     let winner = 'white';
     let maxCount = this.colorCounts['white'] || 0;
 
@@ -47,6 +49,12 @@ export class AppComponent {
       }
     }
 
-    alert('Winner: ' + winner);
+    return winner;
+  }
+
+
+  resetColors(): void {
+    this.colors = [];
+    this.colorCounts = {};
   }
 }

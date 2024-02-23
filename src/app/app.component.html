@@ -1,16 +1,24 @@
 <div class="container">
   <div style="color: white">Made for acoustic people by the acoustic king Span.</div>
   <div class="cock">
-  <span id="white" class="box" (click)="addColor('white')">White</span>
-  <span id="blue" class="box" (click)="addColor('blue')">Blue</span>
-  <span id="red" class="box" (click)="addColor('red')">Red</span>
-  <span id="yellow" class="box" (click)="addColor('yellow')">Yellow</span></div>
+    <span id="white" class="box" (click)="addColor('white')">White</span>
+    <span id="blue" class="box" (click)="addColor('blue')">Blue</span>
+    <span id="red" class="box" (click)="addColor('red')">Red</span>
+    <span id="yellow" class="box" (click)="addColor('yellow')">Yellow</span>
+  </div>
   <div style="color: white">If you fuck up you can click on the little squares to delete, bitch ass.</div>
 
   <div id="feedback">
-  <span *ngFor="let color of colors" (click)="removeColor(color)" [style.background-color]="color"></span>
-</div>
-<button id="end-btn" (click)="calculateWinner()">End</button>
-<div style="color: white">Celestial is gay.</div>
-</div>
+    <span *ngFor="let color of colors" (click)="removeColor(color)" [style.background-color]="color"></span>
+  </div>
+  <div style="color: white">Celestial is gay.</div>
 
+  <!-- Live Counter with Winner -->
+  <div class="winner">
+    <p style="font-weight: bold">Winner:</p>
+    <p [style.color]="getWinner()">{{ getWinner() }}</p>
+  </div>
+
+  <!-- Reset Button -->
+  <button (click)="resetColors()">Reset</button>
+</div>
