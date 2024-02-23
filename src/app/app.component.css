@@ -22,8 +22,6 @@ button:hover {
   background-color: #45a049; /* Darker green on hover */
 }
 
-
-
 .container {
   display: grid;
   justify-content: center;
@@ -35,7 +33,6 @@ button:hover {
 
 .winner {
   text-align: center;
-  margin-top: 20px;
   font-size: 50px;
   font-weight: bold;
 }
@@ -46,7 +43,6 @@ button:hover {
 
 #feedback {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .box {
