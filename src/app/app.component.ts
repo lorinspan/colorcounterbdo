@@ -9,6 +9,18 @@ export class AppComponent {
   colors: string[] = [];
   colorCounts: { [key: string]: number } = {};
 
+  darkMode: boolean = false;
+
+  // Toggle Dark Mode
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+    if (this.darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }
+
   addColor(color: string): void {
     if (!this.colorCounts[color]) {
       this.colorCounts[color] = 1;

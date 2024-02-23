@@ -1,12 +1,13 @@
 <div class="container">
-  <div>Made for acoustic people by the acoustic king Span.</div>
-  <div class="cock">
   <span id="white" class="box" (click)="addColor('white')">White</span>
   <span id="blue" class="box" (click)="addColor('blue')">Blue</span>
   <span id="red" class="box" (click)="addColor('red')">Red</span>
-  <span id="yellow" class="box" (click)="addColor('yellow')">Yellow</span></div>
+  <span id="yellow" class="box" (click)="addColor('yellow')">Yellow</span>
+</div>
 <div id="feedback">
   <span *ngFor="let color of colors" (click)="removeColor(color)" [style.background-color]="color"></span>
 </div>
 <button id="end-btn" (click)="calculateWinner()">End</button>
-</div>
+
+<!-- Dark Mode Button -->
+<button id="dark-mode-btn" (click)="toggleDarkMode()">Dark Mode</button>
