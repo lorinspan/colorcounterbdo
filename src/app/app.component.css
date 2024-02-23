@@ -1,10 +1,14 @@
 .container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   height: 100vh;
   background-color: #f0f0f0; /* Light gray background */
+}
+
+.cock {
+  display: inline;
 }
 
 #feedback {
@@ -18,7 +22,7 @@
   cursor: pointer;
   margin: 0 10px;
   border-radius: 15px; /* Rounded corners */
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
