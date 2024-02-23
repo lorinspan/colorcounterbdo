@@ -11,7 +11,6 @@
   <div id="feedback">
     <span *ngFor="let color of colors" (click)="removeColor(color)" [style.background-color]="color"></span>
   </div>
-  <div style="color: white">Celestial is gay.</div>
 
   <!-- Live Counter with Winner -->
   <div class="winner">
@@ -21,4 +20,5 @@
 
   <!-- Reset Button -->
   <button (click)="resetColors()">Reset</button>
+  <div style="color: white">Celestial is gay.</div>
 </div>
