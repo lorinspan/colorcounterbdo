@@ -5,10 +5,12 @@
   <span id="blue" class="box" (click)="addColor('blue')">Blue</span>
   <span id="red" class="box" (click)="addColor('red')">Red</span>
   <span id="yellow" class="box" (click)="addColor('yellow')">Yellow</span></div>
-  <div style="color: white">You can click on each of them if you fuck up to delete, bitch ass.</div>
+  <div style="color: white">If you fuck up you can click on the little squares to delete, bitch ass.</div>
 
   <div id="feedback">
   <span *ngFor="let color of colors" (click)="removeColor(color)" [style.background-color]="color"></span>
 </div>
 <button id="end-btn" (click)="calculateWinner()">End</button>
+<div style="color: white">Celestial is gay.</div>
 </div>
+
